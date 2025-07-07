@@ -65,6 +65,7 @@ export const removeCartItem = async (req: AuthRequest, res: Response) => {
     cart.items = cart.items.filter(item => item.product.toString() !== productId);
     await cart.save();
 
+
     const updated = await cart.populate('items.product');
     res.status(200).json(updated);
   } catch (err) {

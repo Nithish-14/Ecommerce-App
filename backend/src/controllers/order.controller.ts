@@ -23,12 +23,15 @@ export const placeOrder = async (req: AuthRequest, res: Response) => {
       };
     });
 
+
     const order = await Order.create({
       user: req.user!.id,
       items: orderItems,
       total,
       status: 'placed'
     });
+
+
 
     await Cart.findOneAndDelete({ user: req.user!.id });
 
