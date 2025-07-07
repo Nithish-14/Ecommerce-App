@@ -164,3 +164,8 @@ VITE_API_URL=http://localhost:5000/api
 ```
 
 ---
+
+## 👨‍💻 Author
+
+- Nithish M  
+- GitHub: [@Nithish-14](https://github.com/Nithish-14)
